@@ -16,7 +16,7 @@ export default function Home() {
     <section className="relative w-full h-screen flex items-center justify-center bg-gray-900 text-white">
     <div className="absolute inset-0">
       <Image
-        src="/image.png"
+        src="/reichstag.png"
         alt="Reichstag"
         fill
         className="object-cover opacity-60"
@@ -28,5 +28,6 @@ export default function Home() {
       <p className="text-xl">Hier ist deine Hero Section</p>
     </div>
   </section>
+  
   );
 }

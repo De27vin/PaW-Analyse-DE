@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function App({ Component, pageProps }) {
   return(
@@ -15,10 +16,16 @@ export default function App({ Component, pageProps }) {
           <li><Link className="hover:text-gray-200" href="/armut-in-deutschland">Armut in DE</Link></li>
           <li><Link className="hover:text-gray-200" href="/">Die AfD</Link></li>
         </ul>
-        <div className="mx-auto">Github</div>
+        <a href="https://github.com/De27vin/PaW-Analyse-DE" target="_blank" className="mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+        <Image
+        src="/github.svg"
+        width={50}
+        height={50}
+        />
+        </a>
       </div>
     </nav>
-  <Component {...pageProps} />;
+  <Component {...pageProps}/>;
   </>
   )
 }
