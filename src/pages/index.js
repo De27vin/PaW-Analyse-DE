@@ -24,9 +24,25 @@ export default function Home() {
       />
     </div>
     <div className="relative z-10 text-center">
-      <h1 className="text-5xl font-bold mb-4">Willkommen!</h1>
-      <p className="text-xl">Hier ist deine Hero Section</p>
-    </div>
+  <h1 className="text-5xl font-bold mb-4">Rechtsrutsch-Analyse Deutschland</h1>
+  <br/>
+  <p className="text-xl">Fakten zur Regierung</p>
+  <br/>
+  <div className="grid grid-cols-3 gap-2 place-content-center">
+  <div className="flex items-center gap-4">
+  <Image src="/icons/government.svg" width={30} height={30}/>
+  <p>+700 Bundesabgeordnete</p>
+</div>
+<div className="flex items-center gap-4">
+  <Image src="/icons/law.svg" width={30} height={30}/>
+  <p>1949 Gründung Bundesrepublik</p>
+</div>
+<div className="flex items-center gap-4">
+  <Image src="/icons/weakness.svg" width={30} height={30}/>
+  <p>1990 Wiedervereinigung und Berlin als Hauptstadt</p>
+</div>
+</div>
+</div>
   </section>
   
   );
