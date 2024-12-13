@@ -14,9 +14,9 @@ export default function App({ Component, pageProps }) {
 
         <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
           <li><Link className="hover:text-gray-200" href="/">Home</Link></li>
-          <li><Link className="hover:text-gray-200" href="/armut-in-deutschland">Armut in DE</Link></li>
-          <li><Link className="hover:text-gray-200" href="/dieAfD">Die AfD</Link></li>
           <li><Link className="hover:text-gray-200" href="/ampel-koalition">Ampel-Koalition</Link></li>
+          <li><Link className="hover:text-gray-200" href="/dieAfD">Die AfD</Link></li>
+          <li><Link className="hover:text-gray-200" href="/armut-in-deutschland">Armut in DE</Link></li>
         </ul>
         <a href="https://github.com/De27vin/PaW-Analyse-DE" target="_blank" className="mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
         <Image
