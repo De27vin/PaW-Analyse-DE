@@ -16,8 +16,8 @@ return (
         </section>
     </div>
     <div className='w-3/4'>
-        <p className='text-2xl font-bold'>Lorem Ipsum</p> 
-        <p>Lorem Ipsum</p>
+        <p className='text-2xl font-bold'>Die Armut in Deutschland</p> 
+        <p className='text-xl'>Die Armut zeigt sich in Deutschland bis heute noch und das obwohl es eines der wohlhabendsten Länder der Welt ist. Die Gruft zwischen Arm und Reich zeigt sich hier aber eher relativ. Menschen können sich kulturell nicht mehr aktiv beteiligen und müssen sich um ihre finanzielle Zukunft sorgen. Dabei ist auch vor allem Ost-DE betroffen, welches immer noch von den Folgen der Auflösung der DDR betroffen ist. </p>
     </div>
     </div>
     </>

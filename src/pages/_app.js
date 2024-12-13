@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }) {
           <li><Link className="hover:text-gray-200" href="/">Home</Link></li>
           <li><Link className="hover:text-gray-200" href="/armut-in-deutschland">Armut in DE</Link></li>
           <li><Link className="hover:text-gray-200" href="/">Die AfD</Link></li>
+          <li><Link className="hover:text-gray-200" href="/ampel-koalition">Ampel-Koalition</Link></li>
         </ul>
         <a href="https://github.com/De27vin/PaW-Analyse-DE" target="_blank" className="mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
         <Image
@@ -27,5 +28,5 @@ export default function App({ Component, pageProps }) {
     </nav>
   <Component {...pageProps}/>;
   </>
-  )
+  );
 }
