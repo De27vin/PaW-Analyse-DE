@@ -48,32 +48,65 @@ export default function AmpelKoalitionPage(){
             </div>
         </section>
 
-        <section className="relative w-full h-screen flex items-center justify-center bg-gray-900 text-white">
-            <div className="absolute inset-0">
-                {/* Bild der Parteien */}
+        <section className="relative w-full h-screen flex grid grid-rows-3">
+            {/* SPD */}
+            <div 
+                className="css-spd-hintergrund flex flex-col justify-between items-center text-center flex-1 h-full bg-cover bg-center">
+                <div className="mt-8 text-4xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+                    SPD
+                </div>
+                <div className="mx-12 mb-8 text-lg text-white bg-black bg-opacity-50 px-4 py-2">
+                Die SPD, von der auch Bundeskanzler Olaf Scholz kommt, 
+                steht für soziale Gerechtigkeit und staatliche Investitionen. 
+                In der Ampelkoalition hat die SPD versucht, eine Balance zwischen 
+                sozialem Ausgleich und wirtschaftlicher Stabilität zu finden. 
+                Sie stehen für Sozialpolitik, die Unterstützung von Arbeitnehmern 
+                und gezielten Investitionen in die Infrastruktur. <a className="font-semibold underline decoration-blue-700">
+                
+                Konfliktpunkt mit den anderen Parteien</a>: Die SPD wollte höhere staatliche Ausgaben 
+                für soziale Projekte und Investitionen in die Zukunft, was im Widerspruch zur 
+                FDP-Position der Haushaltsdisziplin stand.
+                </div>
             </div>
 
+            {/* FDP */}
+            <div 
+                className="css-fdp-hintergrund flex flex-col justify-between items-center text-center flex-1 h-full bg-cover bg-center">
+                <div className="mt-8 text-4xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+                    FDP
+                </div>
+                <div className="mx-12 mb-8 text-lg text-white bg-black bg-opacity-50 px-4 py-2">
+                Die FDP vertritt eine wirtschaftsliberale Politik. Christian Lindner, 
+                der ehemalige Bundesfinanzminister, welcher aber von Olaf Scholz entlassen 
+                wurde, bestand auf Sparsamkeit und die Reduktion staatlicher Eingriffe 
+                in die Wirtschaft. Für die FDP war der Haushalt ein entscheidender Punkt, 
+                um die finanzielle Stabilität von Deutschland nicht zu gefährden. <a className="font-semibold underline decoration-blue-700">
 
-            <div className="relative text-center">
-                <a className="text-3xl">Die Parteien der Ampelkoalition</a>
-
+                Konfliktpunkt mit den anderen Parteien</a>: Die FDP widersetzte sich 
+                höheren Ausgaben und neuen Schulden, die durch die SPD und die Grünen 
+                für soziale- und Klima-Projekte entstanden wären. 
+                </div>
             </div>
-            
-            <div className="grid grid-cols-3">
-                <div className="flex items-center">
-                    <a>SPD</a>
-                </div>
 
-                <div>
-                    <a>FDP</a>
+            {/* Die Grünen */}
+            <div 
+                className="css-die-gruenen-hintergrund flex flex-col justify-between items-center text-center flex-1 h-full bg-cover bg-center">
+                <div className="mt-8 text-4xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+                    Die Grünen
                 </div>
+                <div className="mx-12 mb-8 text-lg text-white bg-black bg-opacity-50 px-4 py-2">
+                Die Grünen setzen sich vor allem für die Klimapolitik ein. 
+                Ihr Ziel war es, die deutsche Wirtschaft durch nachhaltige 
+                Energiequellen zu modernisieren und langfristig klimaneutral 
+                zu gestalten. Sie setzten auf Förderprogramme für erneuerbare Energien. <a className="font-semibold underline decoration-blue-700">
 
-                <div>
-                    <a>Die Grünen</a>
+                Konfliktpunkt mit den anderen Parteien</a>: Diese Massnahmen 
+                erforderten hohe Investitionen. Ausserdem kam es zu 
+                Unzufriedenheit über den angeblichen Vorrang der grünen 
+                Klimaziele vor der wirtschaftlicher Stabilität.
                 </div>
             </div>
         </section>
-
 
         </>
     )
