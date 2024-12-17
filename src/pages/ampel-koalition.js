@@ -49,6 +49,7 @@ export default function AmpelKoalitionPage(){
         </section>
 
         <section className="relative w-full h-screen flex grid grid-rows-3">
+
             {/* SPD */}
             <div 
                 className="css-spd-hintergrund flex flex-col justify-between items-center text-center flex-1 h-full bg-cover bg-center">
@@ -108,6 +109,65 @@ export default function AmpelKoalitionPage(){
             </div>
         </section>
 
+        <section className="relative w-full min-h-screen bg-gray-900 text-white flex flex-col items-center justify-start">
+            {/* Hintergrundbild */}
+            <div className="absolute inset-0">
+                <Image
+                    src="/images/ampel-koalition-fall-symbolbild.jpg"
+                    alt="Ampelkoalition"
+                    fill
+                    className="object-cover opacity-80"
+                    priority
+                />
+            </div>
+
+            {/* Titel über den Elementen */}
+            <div className="relative z-10 text-center mt-12 mb-8 px-4">
+                <h2 className="text-5xl md:text-6xl font-extrabold text-white tracking-wide bg-black bg-opacity-50 inline-block px-6 py-3 rounded-lg shadow-lg">
+                    Gründe für den Fall der Ampelkoalition
+                </h2>
+            </div>
+
+            {/* Gründe-Container */}
+            <div className="relative z-10 w-full px-4 md:px-12 grid gap-8">
+                {/* Grund 1 */}
+                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-red-500">
+                    <h3 className="text-2xl font-semibold text-red-600 mb-2">1. Streit um Wirtschaftliche Massnahmen</h3>
+                    <p className="leading-relaxed">
+                        Ein zentraler Streitpunkt innerhalb der Koalition war der Umgang mit der schlechter 
+                        werdenden wirtschaftlichen Lage Deutschlands. Während die FDP für eine liberale 
+                        Wirtschaftspolitik war, verfolgten die SPD und die Grünen andere Prioritäten:
+                    </p>
+                    <ul className="list-disc list-inside mt-2">
+                        <li><strong>SPD:</strong> Fokus auf soziale Gerechtigkeit und staatliche Investitionen.</li>
+                        <li><strong>Grüne:</strong> Vorrang für den Klimaschutz mit kostspieligen Maßnahmen.</li>
+                    </ul>
+                </div>
+
+                {/* Grund 2 */}
+                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-yellow-500">
+                    <h3 className="text-2xl font-semibold text-yellow-600 mb-2">2. Scheitern des Haushaltsentwurfs 2025</h3>
+                    <p className="leading-relaxed">
+                        Das Scheitern eines gemeinsamen Haushaltsentwurf für 2025 zu erstellen
+                        brachte der Koalition weitere Konflikte. Die FDP bestand darauf, die Schuldenbremse 
+                        einzuhalten, doch die SPD und die Grünen wollten weiter investieren.
+                    </p>
+                    <ul className="list-disc list-inside mt-2">
+                        <li><strong>Einnahmen:</strong> Steuern und Abgaben.</li>
+                        <li><strong>Ausgaben:</strong> Bildung, Soziales, Verteidigung und Infrastruktur.</li>
+                    </ul>
+                </div>
+
+                {/* Grund 3 */}
+                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-green-500">
+                    <h3 className="text-2xl font-semibold text-green-600 mb-2">3. Verlust von Vertrauen</h3>
+                    <p className="leading-relaxed">
+                        Die ständigen Konflikte führten zu Vertrauensverlust der Bevölkerung gegenüber dem Zusammenhalt der Koalition. 
+                        Ohne gemeinsame Ziele und eine gemeinsame Strategie war eine es für sie nicht mehr möglich, die Koalition fortzusetzen.
+                    </p>
+                </div>
+            </div>
+        </section>
         </>
     )
 }
