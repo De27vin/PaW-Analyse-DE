@@ -139,7 +139,7 @@ export default function AmpelKoalitionPage(){
             </div>
         </section>
 
-        <section className="relative w-full min-h-screen bg-gray-900 text-white flex flex-col items-center justify-start">
+        <section className="relative w-full min-h-screen bg-gray-900 text-white flex flex-col justify-start">
             {/* Hintergrundbild */}
             <div className="absolute inset-0">
                 <Image
@@ -158,44 +158,74 @@ export default function AmpelKoalitionPage(){
                 </h2>
             </div>
 
-            {/* Gründe-Container */}
-            <div className="relative z-10 w-full px-4 md:px-12 grid gap-8">
-                {/* Grund 1 */}
-                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-red-500">
-                    <h3 className="text-2xl font-semibold text-red-600 mb-2">1. Streit um Wirtschaftliche Massnahmen</h3>
-                    <p className="leading-relaxed">
-                        Ein zentraler Streitpunkt innerhalb der Koalition war der Umgang mit der schlechter 
-                        werdenden wirtschaftlichen Lage Deutschlands. Während die FDP für eine liberale 
-                        Wirtschaftspolitik war, verfolgten die SPD und die Grünen andere Prioritäten:
-                    </p>
-                    <ul className="list-disc list-inside mt-2">
-                        <li><strong>SPD:</strong> Fokus auf soziale Gerechtigkeit und staatliche Investitionen.</li>
-                        <li><strong>Grüne:</strong> Vorrang für den Klimaschutz mit kostspieligen Maßnahmen.</li>
-                    </ul>
+            {/* Gründe-Container äusserer */}
+            <div className="relative w-full grid grid-cols-2">
+
+                {/* Gründe-Container innerer */}
+                <div className="relative z-10 w-full px-4 md:px-12 grid gap-8">
+                    {/* Grund 1 */}
+                    <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-red-500">
+                        <h3 className="text-2xl font-semibold text-red-600 mb-2">1. Streit um Wirtschaftliche Massnahmen</h3>
+                        <p className="leading-relaxed">
+                            Ein zentraler Streitpunkt innerhalb der Koalition war der Umgang mit der schlechter 
+                            werdenden wirtschaftlichen Lage Deutschlands. Während die FDP für eine liberale 
+                            Wirtschaftspolitik war, verfolgten die SPD und die Grünen andere Prioritäten:
+                        </p>
+                        <ul className="list-disc list-inside mt-2">
+                            <li><strong>SPD:</strong> Fokus auf soziale Gerechtigkeit und staatliche Investitionen.</li>
+                            <li><strong>Grüne:</strong> Vorrang für den Klimaschutz mit kostspieligen Maßnahmen.</li>
+                        </ul>
+                    </div>
+
+                    {/* Grund 2 */}
+                    <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-yellow-500">
+                        <h3 className="text-2xl font-semibold text-yellow-600 mb-2">2. Scheitern des Haushaltsentwurfs 2025</h3>
+                        <p className="leading-relaxed">
+                            Das Scheitern eines gemeinsamen Haushaltsentwurf für 2025 zu erstellen
+                            brachte der Koalition weitere Konflikte. Die FDP bestand darauf, die Schuldenbremse 
+                            einzuhalten, doch die SPD und die Grünen wollten weiter investieren.
+                        </p>
+                        <ul className="list-disc list-inside mt-2">
+                            <li><strong>Einnahmen:</strong> Steuern und Abgaben.</li>
+                            <li><strong>Ausgaben:</strong> Bildung, Soziales, Verteidigung und Infrastruktur.</li>
+                        </ul>
+                    </div>
+
+                    {/* Grund 3 */}
+                    <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-green-500">
+                        <h3 className="text-2xl font-semibold text-green-600 mb-2">3. Verlust von Vertrauen</h3>
+                        <p className="leading-relaxed">
+                            Die ständigen Konflikte führten zu Vertrauensverlust der Bevölkerung gegenüber dem Zusammenhalt der Koalition. 
+                            Ohne gemeinsame Ziele und eine gemeinsame Strategie war eine es für sie nicht mehr möglich, die Koalition fortzusetzen.
+                        </p>
+                    </div>
                 </div>
 
-                {/* Grund 2 */}
-                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-yellow-500">
-                    <h3 className="text-2xl font-semibold text-yellow-600 mb-2">2. Scheitern des Haushaltsentwurfs 2025</h3>
-                    <p className="leading-relaxed">
-                        Das Scheitern eines gemeinsamen Haushaltsentwurf für 2025 zu erstellen
-                        brachte der Koalition weitere Konflikte. Die FDP bestand darauf, die Schuldenbremse 
-                        einzuhalten, doch die SPD und die Grünen wollten weiter investieren.
-                    </p>
-                    <ul className="list-disc list-inside mt-2">
-                        <li><strong>Einnahmen:</strong> Steuern und Abgaben.</li>
-                        <li><strong>Ausgaben:</strong> Bildung, Soziales, Verteidigung und Infrastruktur.</li>
-                    </ul>
+                {/* Bundeshaushaltsgrafik-Container */}
+                <div className="relative z-10 w-full px-4 md:px-12 grid gap-8">
+                    <div className="relative">
+                        <Image className="border-solid rounded-lg shadow-lg"
+                            src="/plots/Bundeshaushalt-python-grafik.png"
+                            alt="Bundeshaushalt Grafik"
+                            width={1000}
+                            height={1000}
+                        />
+                    </div>
+
+                    <div className="relative bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg">
+                        {/* Farbübergang für die Border */}
+                        <div className="absolute inset-0 left-0 w-1 bg-gradient-to-b from-red-700 to-black rounded-l-lg"></div>
+                        <div className="relative z-10">
+                            <h3 className="text-2xl font-semibold text-black mb-2">Jährliche Verluste</h3>
+                            <p className="leading-relaxed">
+                                Die roten Balken stehen für die Ausgaben des jeweiligen Jahres, die grünen für die Einnahmen.
+                                Man kann in der Grafik sehen, wie jährlich die geplanten Einnahmen nicht erfüllt werden können.
+                                Es werden jedes Jahr verluste gemacht, was die finanziell schwierige Situation der Ampelkoalition erklärt.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                {/* Grund 3 */}
-                <div className="bg-white bg-opacity-90 text-gray-800 rounded-lg p-6 shadow-lg border-l-4 border-green-500">
-                    <h3 className="text-2xl font-semibold text-green-600 mb-2">3. Verlust von Vertrauen</h3>
-                    <p className="leading-relaxed">
-                        Die ständigen Konflikte führten zu Vertrauensverlust der Bevölkerung gegenüber dem Zusammenhalt der Koalition. 
-                        Ohne gemeinsame Ziele und eine gemeinsame Strategie war eine es für sie nicht mehr möglich, die Koalition fortzusetzen.
-                    </p>
-                </div>
             </div>
         </section>
         </>
