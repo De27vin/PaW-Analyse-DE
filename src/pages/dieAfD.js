@@ -25,7 +25,7 @@ export default function dieAfD() {
               aller Zuwanderung. Deutschland sorge dafür, dass der Strom nicht versiegen wird. 
               {/* Quelle */}
               <a className="font-semibold italic text-orange-400" 
-              href="https://www.bundestag.de/dokumente/textarchiv/2023/kw38-de-aktuelle-stunde-massenmigration-966502?" 
+              href="https://www.bundestag.de/dokumente/textarchiv/2023/kw38-de-aktuelle-stunde-massenmigration-966502" 
               target="_blank" rel="noopener noreferrer"> Quelle</a>
               </div>
             </div>

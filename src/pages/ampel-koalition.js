@@ -31,15 +31,33 @@ export default function AmpelKoalitionPage(){
                 <div className="grid grid-cols-3 mt-8">
 
                     <div>
-                        <p className="text-2xl mr-10">Verantwortliche Parteien</p>
+                        <button onClick={() => {
+                            document
+                            .getElementById("parteien-sektion")
+                            .scrollIntoView({ behavior: "smooth" })
+                        }}>
+                            <p className="text-2xl mr-10">Verantwortliche Parteien</p>
+                        </button>
                     </div>
 
                     <div>
-                        <p className="text-2xl">Gründe für den Fall</p>
+                        <button onClick={() => {
+                            document
+                            .getElementById("gruende-fall-sektion")
+                            .scrollIntoView({ behavior: "smooth" })
+                        }}>
+                            <p className="text-2xl">Gründe für den Fall</p>
+                        </button>
                     </div>
 
                     <div>
-                        <p className="text-2xl ml-10">Idee der Ampelkoalition</p>
+                        <button onClick={() => {
+                            document
+                            .getElementById("parteien-sektion")
+                            .scrollIntoView({ behavior: "smooth" })
+                        }}>
+                            <p className="text-2xl ml-10">Idee der Ampelkoalition</p>
+                        </button>
                     </div>
 
                     {/* FIX: Beim klicken einer dieser drei Themen scrollt es auf der Seite entsprechend runter */}
@@ -48,7 +66,7 @@ export default function AmpelKoalitionPage(){
             </div>
         </section>
 
-        <section className="relative w-full h-screen flex grid grid-rows-3">
+        <section id="parteien-sektion" className="relative w-full h-screen flex grid grid-rows-3">
 
             {/* SPD */}
             <div 
@@ -67,6 +85,10 @@ export default function AmpelKoalitionPage(){
                 Konfliktpunkt mit den anderen Parteien</a>: Die SPD wollte höhere staatliche Ausgaben 
                 für soziale Projekte und Investitionen in die Zukunft, was im Widerspruch zur 
                 FDP-Position der Haushaltsdisziplin stand.
+                {/* Quelle */}
+                <a className="font-semibold italic text-orange-400" 
+                href="https://www.dw.com/de/deutschland-regierung-ampelkoalition-olaf-scholz-christian-lindner-fdp-spd-gr%C3%BCne/a-70717075" 
+                target="_blank" rel="noopener noreferrer"> Quelle</a>
                 </div>
             </div>
 
@@ -85,7 +107,11 @@ export default function AmpelKoalitionPage(){
 
                 Konfliktpunkt mit den anderen Parteien</a>: Die FDP widersetzte sich 
                 höheren Ausgaben und neuen Schulden, die durch die SPD und die Grünen 
-                für soziale- und Klima-Projekte entstanden wären. 
+                für soziale- und Klima-Projekte entstanden wären.
+                {/* Quelle */}
+                <a className="font-semibold italic text-orange-400" 
+                href="https://www.zdf.de/nachrichten/politik/deutschland/ampel-aus-scholz-lindner-haushalt-100.html" 
+                target="_blank" rel="noopener noreferrer"> Quelle</a>
                 </div>
             </div>
 
@@ -105,6 +131,10 @@ export default function AmpelKoalitionPage(){
                 erforderten hohe Investitionen. Ausserdem kam es zu 
                 Unzufriedenheit über den angeblichen Vorrang der grünen 
                 Klimaziele vor der wirtschaftlicher Stabilität.
+                {/* Quelle */}
+                <a className="font-semibold italic text-orange-400" 
+                href="https://www.zdf.de/nachrichten/politik/deutschland/ampel-aus-scholz-lindner-haushalt-100.html" 
+                target="_blank" rel="noopener noreferrer"> Quelle</a>
                 </div>
             </div>
         </section>
@@ -122,7 +152,7 @@ export default function AmpelKoalitionPage(){
             </div>
 
             {/* Titel über den Elementen */}
-            <div className="relative z-10 text-center mt-12 mb-8 px-4">
+            <div id="gruende-fall-sektion" className="relative z-10 text-center mt-12 mb-8 px-4">
                 <h2 className="text-5xl md:text-6xl font-extrabold text-white tracking-wide bg-black bg-opacity-50 inline-block px-6 py-3 rounded-lg shadow-lg">
                     Gründe für den Fall der Ampelkoalition
                 </h2>
