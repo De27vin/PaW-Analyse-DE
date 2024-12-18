@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function ArmutInDeutschlandPage() {
 return (
     <>
-    <div className="grid grid-cols-2 gap-10 h-20 bg-gray-500 m-10 h-auto p-10">
+    <div className="grid grid-cols-2 gap-10 h-20 bg-gray-600 m-10 h-auto p-10 rounded-md">
     <div className='relative'>
         <br/>
         <section className='bg-gray-900'>
@@ -21,7 +21,7 @@ return (
     </div>
     </div>
 
-    <div className="grid grid-cols-2 gap-10 h-20 bg-gray-600 m-10 h-auto p-10">
+    <div className="grid grid-cols-2 gap-10 h-20 bg-gray-700 m-10 h-auto p-10 rounded-md">
     <div className='w-3/4'>
         <p className='text-2xl font-bold'>Das BiP</p> 
         <p className='text-xl'>Auf dieser Grafik sieht man das BiP und das BiP pro Kopf für jedes Bundesland. Wohlhabende Wirtschaftszentren wie Nordrhein-Westfalen oder Bayern haben eher ein stablies BiP. Ostdeutsche Bundesländer haben eher ein tieferes BiP und das zeigt sich in den jeweiligen Bundesländern auch. Armut und Entfremdung gegenüber dem Staat sind für einige Menschen in diesen Bundesländern schon Realität. Solche Menschen sind meist auch empfänglicher für extreme Denkweisen und eine rechte politische Ausrichtung. Auch Strukturdefizite und fehlgeschlagene Pläne für die Förderung mit finanziellen Hilfspaketen sind ein Grund warum viele Menschen nicht der Armut entkommen und es zum Teil über Generationen übertragen wird.
@@ -34,6 +34,21 @@ return (
         width={1000}
         height={1000}
         />  
+    </div>
+    </div>
+
+    <div className="grid grid-cols-2 gap-10 h-20 bg-gray-800 m-10 h-auto p-10 rounded-md">
+    <div className='relative'>
+        <br/>
+        <Image
+        src="/plots/rb.png"
+        width={1000}
+        height={1000}
+        />  
+    </div>
+    <div className='w-3/4'>
+        <p className='text-2xl font-bold'>Die fehlgeschlagenen Reformen der Ampel</p> 
+        <p className='text-xl'>Die Ampel-Koalition hat in Ihrer Zeit einige soziale und systematische Reformen angestrebt darunter die Erhöhung des Mindestlohns und des Bürgergeldes, welches sein Name auch im Rahmen der Reformen erhielt. Sie sollen eine Sicherung des Existenzminimum bewirken Manche dieser Reformen konnten möglicherweise Positives bewirken, jedoch zeigt das BiP, dass die Armut noch besteht. Im Vergleich zu vorherigen Jahren setzte die Ampel hart an und erhöhte das Bürgergeld drastisch. Die anhaltende Armut sorgt bei vielen Bürgern für eine Vertrauensverlust in solche Bemühungen und extremere politische Ansichten. Viele Menschen denken, dass zunehmend Menschen, die in Deutschland in Asyl leben die finanzielle Hilfe, die ihnen zusteht, verbrauchen und sie nichts wirklich davon haben. </p>
     </div>
     </div>
     </>

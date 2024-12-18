@@ -6,7 +6,6 @@ import numpy as np
 
 import pandas as pd
 
-data_bpk = pd.read_csv("../plot_data/bpk.csv")
 data_bpl = pd.read_csv("../plot_data/bpl.csv", header=4, sep=";")
 data_bpl_2023 = data_bpl[['2023', 'Land']]
 data_bpl_2023 = data_bpl_2023.drop(0)
