@@ -3,6 +3,22 @@ import Image from 'next/image'
 export default function ArmutInDeutschlandPage() {
 return (
     <>
+     <section className="relative w-full h-screen flex items-center justify-center bg-gray-900 text-white">
+     <div className="absolute inset-0">
+                <Image
+                    src="/images/jobcenter.jpg"
+                    alt="Armut in DE"
+                    fill
+                    className="object-cover opacity-60"
+                    priority
+                />
+            </div>
+
+            <div className="relative z-10 text-center">
+            <a className="text-5xl font-bold">Die Armut in Deutschland</a>
+            </div>
+
+     </section>
     <div className="grid grid-cols-2 gap-10 h-20 bg-gray-600 m-10 h-auto p-10 rounded-md">
     <div className='relative'>
         <br/>
@@ -15,6 +31,7 @@ return (
         />  
         </section>
     </div>
+
     <div className='w-3/4'>
         <p className='text-2xl font-bold'>Die Armut in Deutschland</p> 
         <p className='text-xl'>Die Armut zeigt sich in Deutschland bis heute noch und das obwohl es eines der wohlhabendsten Länder der Welt ist. Die Gruft zwischen Arm und Reich zeigt sich hier aber eher relativ. Menschen können sich kulturell nicht mehr aktiv beteiligen und müssen sich um ihre finanzielle Zukunft sorgen. Dabei ist auch vor allem Ost-DE betroffen, welches immer noch von den Folgen der Auflösung der DDR betroffen ist. Zum Teil liegt es auch an der Arbeitskultur in den jeweiligen Bundesländern. Während Bayern mit seinem BiP alleine schon fast mit der Schweiz mithalten kann, hat z.B. Mecklenburg-Vorpommern eines der tiefsten BiP's und das trotz Anbindung an wichtige Handelsrouten. </p>
